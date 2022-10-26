@@ -5,65 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Festival</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <a href="/index.html">
-        <img src="./assets/LogoKenzieFestival.png" alt="Logo Dev Festival">
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html#about"">SOBRE</a>
-          </li>
-        </ul>
+    <header id="header">
+      <div class="container">
+        <div class="flexbox">
+          <a href="/index.html">
+            <img src="./assets/LogoKenzieFestival.png" alt="Logo Dev Festival" />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="./index.html#about">SOBRE</a>
+              </li>
+            </ul>
+  
+            <a href="/cart.html" class="btn outline">Quero meu ingresso!</a>
+  
+            <button>
+              <img src="./assets/Vector.png" alt="" />
+            </button>
+          </nav>
+        </div>
 
-        <a href="/cart.html">Quero meu ingresso!</a>
-
-        <button>
-          <img src="./assets/Vector.png" alt="">
-        </button>
-      </nav>
+      </div>
     </header>
 
     <section id="main">
-      <img
-        src="./assets/Patinho2.png"
-        alt="Patinho com touca e óculos escuros"
-      />
-      <h1>Dev Festival</h1>
+      <div class="container">
+        <div class="flexbox">
+          <div class="left">
+            <img
+            src="./assets/Patinho2.png"
+            alt="Patinho com touca e óculos escuros"
+          />
+          <h1 class="title one">
+            <span class="titleblue">&lt;Dev/&gt;</span> Festival
+          </h1>
+          <div class="pad30-top">
+            <a href="/cart.html" class="btn solid">Quero meu ingresso!</a>
+          </div>
+  
+          </div>
+          <div class="right">
+            <img
+            src="./assets/MoçaOuvindoMusica.png"
+            alt="Uma menina ouvindo música com luzes de neon"
+          />
+          </div>
 
-      <a href="" target="_blank">Quero meu ingresso!</a>
 
-      <img
-        src="./assets/MoçaOuvindoMusica.png"
-        alt="Uma menina ouvindo música com luzes de neon"
-      />
+
+        </div>
+
+      </div>
     </section>
 
     <section id="about">
-      <img
-        src="./assets/MoçaOuvindoMusica2.png"
-        alt="Moça ouvindo música com headphone"
-      />
-      <h2>Sobre o festival</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quod
-        dignissimos fuga recusandae nobis ipsum vel porro
-      </p>
-      <p>
-        quis autem. Rerum ut, pariatur velit repellendus architecto excepturi
-        illum delectus provident? Architecto.
-      </p>
+      <div class="container">
+        <div class="flexbox">
+          <div class="left">
+            <img
+            src="./assets/MoçaOuvindoMusica2.png"
+            alt="Moça ouvindo música com headphone"
+          />
+          </div>
+
+          <div class="right">
+            <h2 class="title two pad30-bot">Sobre o festival</h2>
+            <div class="paragraph">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quod
+                dignissimos fuga recusandae nobis ipsum vel porro
+              </p>
+              <p>
+                quis autem. Rerum ut, pariatur velit repellendus architecto
+                excepturi illum delectus provident? Architecto.
+              </p>
+          </div>
+
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer id="footer">
-      <h2>Artistas</h2>
-      <ul>
-        <li><img src="./assets/Artista1.png" alt="Artista 1" /></li>
-        <li><img src="./assets/Artista2.png" alt="Artista 2" /></li>
-        <li><img src="./assets/Artista3.png" alt="Artista 3" /></li>
-      </ul>
+      <div class="container">
+        <h2 class="title two center">Artistas</h2>
+        <ul class="artists-list">
+          <li><img src="./assets/Artista1.png" alt="Artista 1" /></li>
+          <li><img src="./assets/Artista2.png" alt="Artista 2" /></li>
+          <li><img src="./assets/Artista3.png" alt="Artista 3" /></li>
+          <li><img src="./assets/Artista1.png" alt="Artista 1" /></li>
+          <li><img src="./assets/Artista2.png" alt="Artista 2" /></li>
+          <li><img src="./assets/Artista3.png" alt="Artista 3" /></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

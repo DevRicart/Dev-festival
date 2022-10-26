@@ -1,0 +1,373 @@
+/* =========== RESET ============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =========== BACKGROUND ============*/
+
+body {
+  background-color: #01011c;
+}
+
+/* =========== GRID ============*/
+
+.pad10-top {
+  padding-top: 10px;
+}
+
+.pad20-top {
+  padding-top: 20px;
+}
+
+.pad30-top {
+  padding-top: 30px;
+}
+
+.pad10-bot {
+  padding-bottom: 10px;
+}
+
+.pad20-bot {
+  padding-bottom: 20px;
+}
+
+.pad30-bot {
+  padding-bottom: 30px;
+}
+
+/* =========== HEADER ============*/
+
+#header {
+  background-color: #01011c;
+}
+
+#header .menu ul a {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#header .flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .flexbox nav {
+  display: flex;
+  align-items: center;
+
+  gap: 36px;
+}
+
+#header a img {
+  max-width: 175px;
+}
+
+/* =========== TEXT ============*/
+
+.title {
+  font-family: Poppins;
+  color: #ffffff;
+}
+
+.title.one {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 110px;
+}
+
+.title.two {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.title.three {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.title.four {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.title.five {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.title.center {
+  text-align: center;
+}
+
+.paragraph p {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.titleblue {
+  color: #0000ff;
+}
+
+.light-blue {
+  color: #a5a5ff;
+}
+
+/* =========== BUTTONS ============*/
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+
+  width: 300px;
+  height: 60px;
+
+  border-radius: 255px;
+
+  background-color: blue;
+
+  transition: 0.4s;
+}
+
+.btn.solid {
+  background: #0000ff;
+  color: #ffffff;
+
+  border: 2px solid #0000ff;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #a5a5ff;
+
+  width: 263px;
+  height: 62px;
+
+  border: 2px solid #a5a5ff;
+}
+
+.btn.solid:hover {
+  filter: brightness(1.5);
+  background: #4444ff;
+  border-color: #4444ff;
+}
+
+.btn.outline:hover {
+  background: #a5a5ff;
+  color: #ffffff;
+}
+
+/* =========== GRID ============*/
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========== sections ============*/
+
+#main {
+  padding-top: 30px;
+}
+
+#main .flexbox {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+
+#about {
+  padding-top: 90px;
+}
+
+#about .flexbox {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+
+#about .flexbox .left,
+#about .flexbox .right {
+  width: 100%;
+}
+
+#about .flexbox .left img {
+  width: 100%;
+}
+
+#footer {
+  padding-top: 107px;
+}
+
+#footer h2 {
+  padding-bottom: 35px;
+}
+
+.artists-list {
+  display: flex;
+  gap: 19px;
+}
+
+/* =========== CART ============*/
+
+#cart {
+  padding: 50px 0;
+}
+
+#cart .flexbox {
+  display: flex;
+  gap: 40px;
+}
+
+#cart .flexbox .left,
+#cart .flexbox .right {
+  width: 100%;
+}
+
+#cart .flexbox .right {
+  max-width: 300px;
+}
+
+#cart .flexbox .ticket-list {
+  margin-top: 30px;
+}
+
+#cart .flexbox .ticket-list .ticket {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  border: 1px solid #a5a5ff;
+  border-radius: 25px;
+}
+
+#cart .flexbox .ticket-list .ticket .controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#cart .flexbox .ticket-list .ticket .controls button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+  border-radius: 255px;
+}
+
+#cart .flexbox .ticket-list .ticket .controls span {
+  color: #a5a5ff;
+
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+#cart .flexbox .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#cart .flexbox .form input {
+  background: transparent;
+  height: 54px;
+
+  padding: 0 20px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+
+  border: 1px solid #a5a5ff;
+  border-radius: 255px;
+}
+
+#cart .flexbox .form button {
+  margin-top: 44px;
+}
+
+/* =========== FINISHING ============*/
+
+#finishing .flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 50px;
+}
+
+#finishing .flexbox .ticket {
+  min-width: 700px;
+  min-height: 340px;
+  max-width: 815px;
+  max-height: 377px;
+
+  position: relative;
+
+  border: 1px solid #0000FF;
+  border-left-width: 100px;
+
+  padding: 40px;
+  padding-right: 0;
+}
+
+#finishing .flexbox .ticket img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+#finishing .flexbox .ticket .quantity-box {
+  border: 1px solid #ffffff;
+  
+  min-width: 467px;
+
+  margin-top: 20px;
+  margin-right: 194px;
+  padding-block: 25px;
+
+}
+
+#finishing .title.five {
+  text-align: center;
+}
+
+#finishing h1 {
+  text-align: center;
+
+  margin-top: 93px;
+}

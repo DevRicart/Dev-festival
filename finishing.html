@@ -1,43 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Compra finalizada!</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <a href="/index.html">
-      <img src="./assets/LogoKenzieFestival.png" alt="Logo Dev Festival">
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html#about"">SOBRE</a>
-        </li>
-      </ul>
+  <header id="header">
+    <div class="container">
+      <div class="flexbox">
+        <a href="/index.html">
+          <img src="./assets/LogoKenzieFestival.png" alt="Logo Dev Festival" />
+        </a>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="./index.html#about">SOBRE</a>
+            </li>
+          </ul>
 
-      <a href="/cart.html">Quero meu ingresso!</a>
+          <a href="/cart.html" class="btn outline">Quero meu ingresso!</a>
 
-      <button>
-        <img src="./assets/Vector.png" alt="">
-      </button>
-    </nav>
+          <button>
+            <img src="./assets/Vector.png" alt="" />
+          </button>
+        </nav>
+      </div>
+
+    </div>
   </header>
 
   <main>
     <section id="finishing">
-      <h1>Compra realizada com sucesso!</h1>
+<div class="container">
+  <div class="flexbox">
+    <h1 class="title two">Compra realizada <br> com sucesso!</h1>
 
-      <div>
-        <h2>José da Silva</h2>
-        <p>josedasilva@hotmail.com</p>
-        <div>Ingresso para 3 pessoas.</div>
-        <img src="./assets/Patinho.png" alt="">
+    <div class="ticket">
+      <h2 class="title two">José da Silva</h2>
+      <p class="title four">josedasilva@hotmail.com</p>
+      <div class="quantity-box">
+        <p class="title five">Ingresso para <span class="light-blue">3</span> pessoas</p> 
       </div>
-      <a href="./index.html">Retornar ao início</a>
-    </section>
+      <img src="./assets/Patinho.png" alt="">
+    </div>
+    <a href="./index.html" class="btn outline">Retornar ao início</a>
+  </div>
+
+</section>
+</div>
   </main>
 </body>
 </html>
