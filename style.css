@@ -21,6 +21,10 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 /* =========== BACKGROUND ============*/
 
 body {
@@ -192,7 +196,17 @@ body {
   margin: 0 auto;
 }
 
+#footer .container {
+  width: 100%;
+  max-width: max-content;
+}
+
 /* =========== sections ============*/
+
+.woman-img {
+  width: 515px;
+  height: 690px;
+}
 
 #main {
   padding-top: 30px;
@@ -219,10 +233,6 @@ body {
   width: 100%;
 }
 
-#about .flexbox .left img {
-  width: 100%;
-}
-
 #footer {
   padding-top: 107px;
 }
@@ -233,14 +243,15 @@ body {
 
 .artists-list {
   display: flex;
+  align-items: center;
   gap: 19px;
 }
 
-/* =========== CART ============*/
-
-#cart {
-  padding: 50px 0;
+#footer img {
+  width: 150px;
 }
+
+/* =========== CART ============*/
 
 #cart .flexbox {
   display: flex;
@@ -252,8 +263,13 @@ body {
   width: 100%;
 }
 
+#cart .flexbox .left {
+  margin-top: 64px;
+}
+
 #cart .flexbox .right {
   max-width: 300px;
+  margin-top: 85px;
 }
 
 #cart .flexbox .ticket-list {
@@ -263,9 +279,11 @@ body {
 #cart .flexbox .ticket-list .ticket {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 40px 40px 40px 60px;
   border: 1px solid #a5a5ff;
   border-radius: 25px;
+
+  max-width: 815px;
 }
 
 #cart .flexbox .ticket-list .ticket .controls {
@@ -281,6 +299,8 @@ body {
   justify-content: center;
   width: 29px;
   height: 29px;
+
+  font-size: 20px;
 
   color: #ffffff;
 
@@ -308,6 +328,9 @@ body {
 
   padding: 0 20px;
 
+  color: #ffffff;
+
+
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -316,8 +339,13 @@ body {
   border-radius: 255px;
 }
 
+#cart h3 {
+  display: flex;
+  align-items: center;
+}
+
 #cart .flexbox .form button {
-  margin-top: 44px;
+  margin-top: 25px;
 }
 
 /* =========== FINISHING ============*/
