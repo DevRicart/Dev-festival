@@ -25,10 +25,75 @@ li {
   list-style: none;
 }
 
+/* =========== THEME ============*/
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+body.light {
+  background: white;
+}
+
+p.light {
+  color: black;
+}
+
+#cart .flexbox .ticket-list .ticket .controls button.light {
+  color: black;
+  border: 2px solid black;
+}
+
+h3.light {
+  color: black;
+}
+
+h2.light {
+  color: black;
+}
+
+h1.light {
+  color: black;
+}
+
+.label {
+  background-color: #a5a5ff;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+  position: relative;
+  width: 90px;
+}
+
+.label .ball {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  height: 40px;
+  width: 40px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(44px);
+}
+
 /* =========== BACKGROUND ============*/
 
 body {
   background-color: #01011c;
+  transition: background 0.2s linear;
 }
 
 /* =========== GRID ============*/
@@ -76,11 +141,12 @@ body {
   justify-content: space-between;
 }
 
+
 #header .flexbox nav {
   display: flex;
   align-items: center;
-
   gap: 36px;
+
 }
 
 #header a img {
@@ -124,7 +190,7 @@ body {
   text-align: center;
 }
 
-.paragraph p {
+.paragraph {
   font-family: Poppins;
   font-size: 19px;
   font-weight: 400;
@@ -181,6 +247,15 @@ body {
   filter: brightness(1.5);
   background: #4444ff;
   border-color: #4444ff;
+}
+
+.about {
+  opacity: 0.5;
+  transition: 500ms;
+}
+
+.about:hover {
+  opacity: 1;
 }
 
 .btn.outline:hover {

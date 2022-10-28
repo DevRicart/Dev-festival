@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="body">
     <header id="header">
       <div class="container">
         <div class="flexbox">
@@ -24,15 +24,21 @@
           <nav class="menu">
             <ul>
               <li>
-                <a href="./index.html#about">SOBRE</a>
+                <a href="./index.html#about" class="about">SOBRE</a>
               </li>
             </ul>
   
             <a href="/cart.html" class="btn outline">Quero meu ingresso!</a>
   
-            <button>
-              <img src="./assets/Vector.png" alt="" />
-            </button>
+            <div>
+              <input type="checkbox" class="checkbox" id="chk"/>
+              <label class="label" for="chk">
+                <img src="./assets/Vector.png" alt="">
+                <img src="./assets/lua.png" alt="">
+                <div class="ball"></div>
+              </label>
+            </div>
+
           </nav>
         </div>
 
@@ -83,12 +89,10 @@
 
           <div class="right">
             <h2 class="title two pad30-bot">Sobre o festival</h2>
-            <div class="paragraph">
-              <p>
+            <div>
+              <p class="paragraph"  id="change">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quod
-                dignissimos fuga recusandae nobis ipsum vel porro
-              </p>
-              <p>
+                dignissimos fuga recusandae nobis ipsum vel porro <br>
                 quis autem. Rerum ut, pariatur velit repellendus architecto
                 excepturi illum delectus provident? Architecto.
               </p>
@@ -112,5 +116,8 @@
         </ul>
       </div>
     </footer>
+
+
   </body>
+  <script src="./mode.js"></script>
 </html>
